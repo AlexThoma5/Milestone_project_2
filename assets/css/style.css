@@ -97,3 +97,29 @@
     width: 85%;
     max-width: 550px;
 }
+
+.custom-btn {
+    font-weight: 600;
+    border: 2px solid white;
+    color: white;
+    background: #B80093;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    width: 140px;
+    height: 50px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.custom-btn:hover {
+    border: 2px solid white;
+    color: #B80093;
+    background: white;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    width: 140px;
+    height: 50px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transform: scale(1.05);
+}
