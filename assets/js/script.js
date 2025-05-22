@@ -328,7 +328,30 @@ document.addEventListener("DOMContentLoaded", function(){
     * preparing the game for a new turn or to recover from an invalid action.
     */
     function resetGameState() {
-
+        
+        // Removes class from any highlighted button when gameState is reset - Checks if it exists first to prevent error
+        if (gameState.lastClickedButton) {
+            gameState.lastClickedButton.classList.remove("selected");
+        }
+        // Removes class from lastClickedOp - Checks if it exists first to prevent error
+        if (gameState.lastClickedOp) {
+            gameState.lastClickedOp.classList.remove("selected");
+        }
+        
+        // Resets variables back to original state
+        gameState.num1 = null;
+        gameState.num1ButtonIndex = null;
+        gameState.num2 = null;
+        gameState.num2ButtonIndex = null;
+        gameState.num3 = null;
+        gameState.index = null;
+        gameState.operator = null;
+        gameState.clickedOp = null;
+        gameState.lastClickedOp = null;
+        gameState.lastClickedButton = null;
+        gameState.step = 1;
+        gameState.chosenNumber = null;
+        document.querySelector(".operator-area").classList.add("disabled");
     }
 
 });
