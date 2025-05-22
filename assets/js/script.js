@@ -235,8 +235,35 @@ document.addEventListener("DOMContentLoaded", function(){
      * @param {string} operator - The operator to apply ('+', '-', '*', '/').
      */
     function performCalculation(operator) {
+        
+        let answer;
 
+        switch(operator){
+            case '+':
+                answer = parseInt(gameState.num1) + parseInt(gameState.num2);
+                break;
+            case '-':
+                answer = parseInt(gameState.num1) - parseInt(gameState.num2);
+                break;
+            case '*':
+                answer = parseInt(gameState.num1) * parseInt(gameState.num2);
+                break;
+            case '/':
+                answer = parseInt(gameState.num1) / parseInt(gameState.num2);
+                break;
+        }
 
+        // Checks if the answer is positive and an integer before assigning num3 and moving the game to step 4
+        // if not, num3 is not updated and user is sent back to step 1
+        if (answer > 0 && Number.isInteger(answer)) {
+            gameState.num3 = answer;
+            gameState.step = 4;
+            manageGameState(); // recalls game state function, to perform step 4  
+        } else {
+            showErrorModal(answer); // calls error modal if the answer isnt viable
+            gameState.step = 1;
+            manageGameState();
+        }
     }
 
     /**
