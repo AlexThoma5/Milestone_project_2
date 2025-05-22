@@ -67,6 +67,17 @@
 }
 
 /* Operator area styling */
+.operator-area-size {
+    max-width: 360px;
+}
+
+.operator-btn {
+    height: 60px;
+    width: 60px;
+    border-radius: 10%;
+    font-size: 1.5rem;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6); /* 3d button background taken from chatgpt */
+}
 
 .center-flex {
     display: flex;
