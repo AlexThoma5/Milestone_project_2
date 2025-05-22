@@ -295,6 +295,16 @@ document.addEventListener("DOMContentLoaded", function(){
      */
     function storeNumberArray() {
 
+        if (gameState.round === 1) {
+            gameState.initialArrayCopy = gameState.activeArray.slice(); // Create a copy of the array to store
+            gameState.round++;
+        } else if (gameState.round === 2) {
+            gameState.secondVersionArray = gameState.activeArray.slice();
+            gameState.round++;
+        } else if (gameState.round === 3) {
+            gameState.thirdVersionArray = gameState.activeArray.slice();
+            gameState.round++;
+        }
     }
 
     /**
