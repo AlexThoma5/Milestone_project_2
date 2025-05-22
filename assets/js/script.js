@@ -28,8 +28,25 @@ document.addEventListener("DOMContentLoaded", function(){
     
     // Game state object lives here (idea taken from chatGPT)
     const gameState = {
-
-    };
+        num1: null,
+        num1ButtonIndex: null,
+        num2: null,
+        num2ButtonIndex: null,
+        num3: null,
+        operator: null,
+        clickedOp: null,
+        lastClickedOp: null,
+        lastClickedButton: null,
+        index: null,
+        step: 1,
+        chosenNumber: null,
+        activeArray: [],
+        round: 1,
+        initialArrayCopy: [],
+        secondVersionArray: [],
+        thirdVersionArray: [],
+        fourthVersionArray: [],
+        };
 
     /**
      * Initialises and starts a new game round
