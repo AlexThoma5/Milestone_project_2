@@ -312,6 +312,20 @@ document.addEventListener("DOMContentLoaded", function(){
      */
     function revertArray() {
 
+        if (gameState.round === 4) {
+            gameState.activeArray = gameState.thirdVersionArray.slice();
+            gameState.round--;
+        } else if (gameState.round === 3) {
+            gameState.activeArray = gameState.secondVersionArray.slice();
+            gameState.round--;
+        } else if (gameState.round === 2) {
+            gameState.activeArray = gameState.initialArrayCopy.slice();
+            gameState.round--;
+        } else {
+            return;
+        }
+
+        displayNumbers();
     }
 
     /**
