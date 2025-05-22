@@ -19,6 +19,7 @@ body {
     overflow: hidden; /* Remove the scroll to make it feel more like an app */
     font-family: var(--secondary-font);
     letter-spacing: 1px;
+    touch-action: manipulation;
 }
 
 .hide {
