@@ -2,3 +2,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Roboto:wght@100..900&display=swap");
 
+/* main game-area */
+
+.game-area {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 90vh;
+    background-color: red;
+    margin: 0 auto;
+    padding: 1%;
+}
