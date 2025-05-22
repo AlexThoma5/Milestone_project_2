@@ -189,6 +189,38 @@
         </div>
       </div>
     </main>
+    <!-- Game ending modal -->
+    <div
+      class="modal fade"
+      id="gameEndingModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="gameEndingLabel"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h1 class="modal-title fs-5 text-center" id="gameEndingLabel">
+              GAME OVER
+            </h1>
+          </div>
+          <div class="modal-body text-center">
+            <p>Your final score was <span id="finalScore"></span>!</p>
+            <p id="game-end-message"></p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button
+              type="button"
+              class="btn custom-btn"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Error modal -->
     <div
       class="modal"
@@ -220,6 +252,7 @@
         </div>
       </div>
     </div>
+
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"

@@ -335,6 +335,9 @@ document.addEventListener("DOMContentLoaded", function(){
      */
     function showScoreModal() {
 
+        const modal = new bootstrap.Modal(document.getElementById('gameEndingModal'));
+        modal.show();
+        
     }
 
     /**
