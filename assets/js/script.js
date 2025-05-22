@@ -309,6 +309,14 @@ document.addEventListener("DOMContentLoaded", function(){
      */
     function checkForWin() {
 
+        // Filters the numbers array, removes all falsey values. Only numbers remain.
+        const filterArray = gameState.activeArray.filter(Boolean);
+
+        if (filterArray.length === 1 && filterArray[0] === 24) {
+            incrementScore();
+            runGame();
+        }
+
     }
 
     /**
@@ -316,6 +324,8 @@ document.addEventListener("DOMContentLoaded", function(){
     */
     function incrementScore() {
 
+        let oldScore = parseInt(document.getElementById("score").innerText);
+        document.getElementById("score").innerText = ++oldScore;
     }
 
     /**
