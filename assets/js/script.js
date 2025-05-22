@@ -135,6 +135,12 @@ document.addEventListener("DOMContentLoaded", function(){
      * Displays the numbers to User and removes empty buttons
      */
     function displayNumbers() {
+        
+        // Inserts the numbers from the selected array into each button
+        document.getElementById('operand1').innerText = gameState.activeArray[0];
+        document.getElementById('operand2').innerText = gameState.activeArray[1];
+        document.getElementById('operand3').innerText = gameState.activeArray[2];
+        document.getElementById('operand4').innerText = gameState.activeArray[3];
 
     }
 
