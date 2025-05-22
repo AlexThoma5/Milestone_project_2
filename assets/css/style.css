@@ -80,6 +80,12 @@ body {
     background-color: var(--secondary-color);
 }
 
+/* Number grid */
+
+.number-grid {
+    min-height: 298px; /* Min-height added to stop number grid collapsing when numbers are used */
+}
+
 /* Game buttons that contain numbers for the 24 game */
 
 .game-btn {
