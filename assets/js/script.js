@@ -53,6 +53,9 @@ document.addEventListener("DOMContentLoaded", function(){
      */
     function runGame() {
 
+        gameState.activeArray = getRandomSet(); // Stores the random set of numbers into the active array for the UI to display
+        gameState.round = 1; // Resets the round count to 1 when new game is started
+        displayNumbers(); // Displays the active array to the user
     }
 
     /**
