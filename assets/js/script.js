@@ -150,7 +150,41 @@ document.addEventListener("DOMContentLoaded", function(){
      */
     function handleNumberClick(event) {
 
+        // stores clicked button into a variable
+        const clickedButton = event.currentTarget;
+
+        // Stores the index of clicked button
+        gameState.index = parseInt(clickedButton.getAttribute("data-index"));
+
+        // Deselect if same button clicked
+        if (clickedButton === gameState.lastClickedButton) {
+            clickedButton.classList.toggle("selected");
+            gameState.chosenNumber = null;
+            gameState.lastClickedButton = null;
+            gameState.step = 1;
+            gameState.num1 = null;
+        } else {
+            // Deselect previous button if any
+            if (gameState.lastClickedButton) {
+                gameState.lastClickedButton.classList.remove("selected");
+            }
+            // Select new button
+            clickedButton.classList.add("selected");
+            gameState.lastClickedButton = clickedButton;
+            gameState.chosenNumber = clickedButton.innerText;
+
+            if (!gameState.operator) {
+                // No operator selected yet - This means the user is selecting the first number
+                gameState.step = 2;
+            } else {
+                // Operator already selected - This means to user is selecting the second number
+                gameState.step = 3;
+            }
+        }
+
+        manageGameState();
     }
+
 
     /**
      * Handles user clicks on operator buttons, updating game state accordingly.
