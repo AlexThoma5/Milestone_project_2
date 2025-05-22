@@ -90,7 +90,14 @@ body {
     color: #1a6ba2;
 }
 
+.game-btn.selected {
+    background: #3498db;
+    color: white;
+    box-shadow: inset 2px 2px 5px #2c80b4;  /* 3d button background taken from chatgpt */
+  }
+
 /* Operator area styling */
+
 .operator-area-size {
     max-width: 360px;
 }
