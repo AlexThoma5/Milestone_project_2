@@ -40,3 +40,12 @@
     font-size: 1.5rem;
     margin: 5px;
 }
+
+/* Game panel that holds numbers and operators */
+
+.game-panel {
+    width: 85%;
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: white;
+}

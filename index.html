@@ -95,7 +95,7 @@
             </div>
           </div>
         </div>
-        <!-- Placeholder for Game Panel -->
+        <!-- Game Panel -->
         <div class="game-panel container">
           <!-- Score and Timer -->
           <div class="row justify-content-center score-area">
@@ -103,12 +103,32 @@
               <p>Score: <span id="score">0</span></p>
             </div>
             <div class="col-6 col-md-4">
-              <p>
-                <span id="minutes">02</span>:<span id="seconds">00</span>s
-              </p>
+              <p><span id="minutes">02</span>:<span id="seconds">00</span>s</p>
             </div>
           </div>
-          <!-- Content like score, number grid, etc., -->
+          <!-- Number Grid -->
+          <div class="row pt-4 pb-4 gx-0">
+            <div class="col-6 d-flex justify-content-end">
+              <button class="game-btn" data-index="0">
+                <span id="operand1">?</span>
+              </button>
+            </div>
+            <div class="col-6 d-flex justify-content-start">
+              <button class="game-btn" data-index="1">
+                <span id="operand2">?</span>
+              </button>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <button class="game-btn" data-index="2">
+                <span id="operand3">?</span>
+              </button>
+            </div>
+            <div class="col-6 d-flex justify-content-start">
+              <button class="game-btn" data-index="3">
+                <span id="operand4">?</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
