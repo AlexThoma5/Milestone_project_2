@@ -23,6 +23,16 @@
 
 ### User Stories
 
+1. As a beginner, I want to be able to see the game rules to understand the game.
+2. As a player, I want the game to prevent invalid moves (like dividing by zero or using negative/decimal results), so I play within the game’s rules.
+3. As a player, I want to be able to deselect a number or operator, so that I can change my mind before committing to a move.
+4. As a player, I want the interface to highlight which numbers and operators I’ve selected so I don’t get confused during my turn.
+5. As a player, I want to see my score increase when I win so that I can track my progress.
+6. As a player, I want to undo a move, so that I can try a different calculation if I make a mistake.
+7. As an experienced player, I want the game to be timed to make the game more competitive and rewarding.
+8. As a player, I want to be presented with my score at the end of the game so that I can attempt to beat it next time.
+9. As a player, I want the option to quit the game and start again, so that I can reset my progress and begin a new game at any time.
+
 ### Wireframes
 
 The wireframes for this website were created using Balsamiq to establish a clear and intuitive structure. I followed the mobile-first approach ensuring my site is optimised and responsive across all devices.
