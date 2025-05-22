@@ -314,7 +314,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
         if (filterArray.length === 1 && filterArray[0] === 24) {
             incrementScore();
-            runGame();
+
+            // Wait 0.5 seconds before starting a new round (code taken from chatGPT)
+            setTimeout(() => {runGame();}, 500);
         }
 
     }
