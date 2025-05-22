@@ -65,3 +65,11 @@
     margin: 0.5rem;
     color: #1a6ba2;
 }
+
+/* Operator area styling */
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
