@@ -1,6 +1,31 @@
 // Wait for the DOM to finish loading before running the game
 document.addEventListener("DOMContentLoaded", function(){
 
+    // Get the button Elements and add event listeners to them
+    let buttons = document.getElementsByTagName("button");
+
+    for (let button of buttons) {
+        button.addEventListener("click", function(){
+            if (this.getAttribute("data-type") === "start"){
+                resetGameState();
+                document.getElementById("score").innerText = 0; // Resets score at DOM
+                document.querySelector(".number-grid").classList.remove("disabled"); // Enable the number-grid once game has begun
+                document.getElementById("start").classList.add("hide"); // Disable start button to prevent user pressing more than once.
+                document.getElementById("quit").style.display = 'inline-block'; // Show quit button to user once game has begun
+                runGame();
+                startGameTimer();
+            } else if (this.classList.contains("game-btn")){
+                handleNumberClick(event);
+            } else if (this.classList.contains("operator-btn")){
+                handleOperatorClick(event);
+            } else if (this.getAttribute("data-type") === "undo") {
+                revertArray();
+            } else if (this.getAttribute("data-type") === "quit") {
+                location.reload();
+            }
+        });
+    }
+    
     // Game state object lives here (idea taken from chatGPT)
     const gameState = {
 
