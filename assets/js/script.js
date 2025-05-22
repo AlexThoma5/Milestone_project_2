@@ -115,6 +115,20 @@ document.addEventListener("DOMContentLoaded", function(){
      */
     function getRandomSet() {
 
+        // Array of number sets that will be used in the game
+        const numbersArray = [[8,8,2,7], [8,8,4,1], [6,6,8,2], [2,7,4,8], [1,5,6,3], [2,4,8,9], [8,7,1,8], [1,3,5,6], [2,4,4,6], [2,2,3,7],
+         [1,2,5,6], [2,2,6,7], [3,6,8,9], [1,3,7,8], [3,3,5,9], [4,6,6,8], [1,2,4,9], [8,7,8,1], [3,4,4,5], [5,5,9,1], [2,4,6,7], [1,2,7,8],
+          [1,4,4,6], [2,3,3,7], [8,8,7,9], [1,5,6,8], [2,4,8,9], [5,6,6,9], [7,7,7,3], [5,7,8,8], [3,5,8,9], [2,5,7,9], [3,4,7,8], [2,3,4,8],
+        [5,7,7,5], [1,4,4,9], [2,2,5,7], [1,3,8,8], [4,5,5,7], [1,5,6,7], [2,2,6,9], [3,4,2,6], [4,6,6,8], [4,5,2,2] [4,4,2,8], [3,4,5,5], 
+        [2,9,3,5], [8,2,6,2], [2,4,4,1], [1,5,8,8], [3,3,4,8]];
+
+        // Creates random number between 0 and the array length
+        const randomNum = Math.floor(Math.random() * numbersArray.length);
+            
+        // Stores random array from numbers array into variable
+        const randomSet = numbersArray[randomNum];
+        
+        return randomSet;
     }
 
     /**
