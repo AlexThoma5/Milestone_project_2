@@ -214,3 +214,17 @@ body {
     font-size: 15px;
     letter-spacing: 1px;
 }
+
+/* Media queries */
+
+/* For small mobile devices below 355px */
+@media screen and (max-width: 355px) {
+    .custom-btn {
+        margin-top: 1rem;
+        text-transform: uppercase;
+        width: 120px;
+        height: 50px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }    
+}
