@@ -25,6 +25,32 @@
 
 ### Wireframes
 
+The wireframes for this website were created using Balsamiq to establish a clear and intuitive structure. I followed the mobile-first approach ensuring my site is optimised and responsive across all devices.
+
+1. #### Mobile:
+
+    <details><summary>Click to view wireframes</em></summary>
+
+    ![Desktop Wireframe](docs/wireframes/mobile-wireframe.png)
+
+    </details>
+
+2. #### Tablet:
+
+    <details><summary>Click to view wireframes</em></summary>
+
+    ![Mobile/Tablet Wireframes](docs/wireframes/tablet-wireframe.png)
+
+    </details>
+
+3. #### Desktop:
+
+    <details><summary>Click to view wireframes</em></summary>
+
+    ![Mobile/Tablet Wireframes](docs/wireframes/desktop-wireframe.png)
+
+    </details>
+    
 ### Typography
 
 ### Colour Scheme
