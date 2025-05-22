@@ -63,14 +63,43 @@ document.addEventListener("DOMContentLoaded", function(){
      */
     function startGameTimer() {
 
+        let secondsLeft = 120;
+
+        const timerId = setInterval(() => {
+
+            // Checks if there are 0 seconds left, if so clear the timer
+            if (secondsLeft === 0) {
+                clearInterval(timerId);
+                showScoreModal();
+            }
+
+            // Decrement seconds remaining
+            secondsLeft--;
+            
+            // Checks if seconds is bigger than or equal to zero first to prevent showing negative numbers on timer
+            if (secondsLeft >= 0) {
+                // Update display to reflect how much time the user has remaining
+                updateTimerDisplay(secondsLeft);
+            }
+
+        }, 1000);
     }
 
     /**
      * Updates UI to reflect timer
      * @param {number} secondsLeft - takes a number as argument
      */
-    function updateTimerDisplay(secondsLeft) {
+    function updateTimerDisplay(secondsLeft){
 
+        // Convert the seconds left into a minutes variable
+        const minutes = Math.floor(secondsLeft / 60);
+
+        // Stores the remaining seconds into a variable
+        const seconds = secondsLeft % 60;
+
+        // Updates the UI with our respective variables, padStart is added to display the time in a MM:SS format
+        document.getElementById("minutes").innerText = `${minutes}`.padStart(2, "0");
+        document.getElementById("seconds").innerText = `${seconds}`.padStart(2, "0");
     }
 
     /**
