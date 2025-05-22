@@ -159,6 +159,18 @@ document.addEventListener("DOMContentLoaded", function(){
         document.getElementById('operand3').innerText = gameState.activeArray[2];
         document.getElementById('operand4').innerText = gameState.activeArray[3];
 
+        // Stores all number buttons into a variable
+        const numberButtons = document.getElementsByClassName('game-btn');
+
+        // Loops through number buttons to check if they are empty, if they are update UI and remove empty buttons
+        for (let button of numberButtons) {
+            if (button.innerText.trim() === "") {
+                button.style.display = 'none';
+            } else {
+                button.style.display = 'inline-block';
+            }
+        }
+
     }
 
     /**
