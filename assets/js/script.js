@@ -283,6 +283,11 @@ document.addEventListener("DOMContentLoaded", function(){
      */
     function updateNumberArray() {
         
+        // Sets the num1 number to null in the array
+        gameState.activeArray[gameState.num1ButtonIndex] = null;
+
+        // Sets num2 number to the calculated number (num3) in the array
+        gameState.activeArray[gameState.num2ButtonIndex] = gameState.num3;
     }
 
     /**
