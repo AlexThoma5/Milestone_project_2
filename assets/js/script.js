@@ -349,7 +349,11 @@ document.addEventListener("DOMContentLoaded", function(){
      */
     function showErrorModal(answer) {
 
+        const errorMessage = document.getElementById("error-message");
+        errorMessage.innerText = `Your result is: ${answer}.`;
 
+        const modal = new bootstrap.Modal(document.getElementById('errorModal'));
+        modal.show();
     }
 
     /**
