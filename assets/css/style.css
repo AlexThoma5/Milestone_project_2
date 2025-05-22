@@ -2,6 +2,17 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Roboto:wght@100..900&display=swap");
 
+/* Heading styles */
+
+.heading {
+    color: white;
+    font-size: 3rem;
+    background: linear-gradient(90deg,rgba(51, 51, 153, 1) 0%, rgba(255, 0, 204, 1) 100%);
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 0;
+}
+
 /* main game-area */
 
 .game-area {
