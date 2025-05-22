@@ -385,7 +385,7 @@ document.addEventListener("DOMContentLoaded", function(){
             message.innerText = "Good effort! Keep practising and you'll be unstoppable.";
         } else if (finalScore < 9) {
             message.innerText = "Great job! You've got sharp math skills.";
-        } else if (finalScore >= 12) {
+        } else if (finalScore >= 9) {
             message.innerText = "Incredible! You're a 24 master!";
         }
     }
