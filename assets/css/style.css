@@ -91,6 +91,46 @@
     align-items: center;
 }
 
+#plus {
+    color: green;
+    border: 2px solid green;
+}
+
+#plus.selected {
+    color: white;
+    background: green;
+}
+
+#minus {
+    color: red;
+    border: 2px solid red;
+}
+
+#minus.selected {
+    color: white;
+    background: red;
+}
+
+#multiply {
+    color: blue;
+    border: 2px solid blue;
+}
+
+#multiply.selected {
+    color: white;
+    background: blue;
+}
+
+#divide {
+    color: orange;
+    border: 2px solid orange;
+}
+
+#divide.selected {
+    color: white;
+    background: orange;
+}
+
 /* Start, quit and Undo button styles */
 
 .game-controls {
