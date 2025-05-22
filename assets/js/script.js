@@ -338,6 +338,8 @@ document.addEventListener("DOMContentLoaded", function(){
         const modal = new bootstrap.Modal(document.getElementById('gameEndingModal'));
         modal.show();
         
+        // Updates the modal to match the users final score
+        updateModalContent();
     }
 
     /**
@@ -345,6 +347,23 @@ document.addEventListener("DOMContentLoaded", function(){
      */
     function updateModalContent() {
 
+        let finalScore = parseInt(document.getElementById("score").innerText);
+        document.getElementById("finalScore").innerText = finalScore;
+
+        // Updates user message depending on their final score
+        const message = document.getElementById('game-end-message');
+
+        if (finalScore === 0 ) {
+             message.innerText = "Hey, it happens. Shake it off and try again!";
+        } else if (finalScore < 3) {
+            message.innerText = "Good start! Keep pushing and sharpening your skills.";
+        } else if (finalScore < 6) {
+            message.innerText = "Good effort! Keep practising and you'll be unstoppable.";
+        } else if (finalScore < 9) {
+            message.innerText = "Great job! You've got sharp math skills.";
+        } else if (finalScore >= 12) {
+            message.innerText = "Incredible! You're a 24 master!";
+        }
     }
 
     /**
