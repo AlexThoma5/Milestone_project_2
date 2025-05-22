@@ -106,7 +106,24 @@ document.addEventListener("DOMContentLoaded", function(){
     * Manages the current state of the game based on the step value in `gameState`.
     */
     function manageGameState() {
-
+       
+        if (gameState.step === 2) {
+            gameState.num1 = gameState.chosenNumber; // num1 is the button user clicks
+            gameState.num1ButtonIndex = gameState.index; // Tracks the index of num1 button to update array
+            document.querySelector(".operator-area").classList.remove("disabled"); // Once user has clicked a number, the operators appear
+        } else if (gameState.step === 3) {
+            gameState.num2 = gameState.chosenNumber; // num2 is the button user clicks
+            gameState.num2ButtonIndex = gameState.index; // Tracks the index of num1 button to update array
+            performCalculation(gameState.operator); // performs the calculation of the two numbers and passed operator
+        } else if (gameState.step === 4) {
+            storeNumberArray(); // Store the number array so we can backtrack with undo button later on
+            updateNumberArray(); // After calculation update the array
+            displayNumbers(); // Update the UI to reflect the updated array
+            checkForWin(); // After numbers are updated, check if User has won a point
+            resetGameState(); // Reset variables to send the user back to step 1
+        } else if (gameState.step === 1) {
+            resetGameState(); // Resets gameState if user tries to calculate a negative number
+        }
     }
 
     /**
