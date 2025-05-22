@@ -99,6 +99,7 @@ body {
     box-shadow: 4px 4px 8px #cfcfcf, -4px -4px 8px #ffffff;  /* 3d button background taken from chatgpt */
     padding: 1rem 1.5rem;
     margin: 0.5rem;
+    transition: all 0.2s ease-in-out;
     color: #1a6ba2;
 }
 
