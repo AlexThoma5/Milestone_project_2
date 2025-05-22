@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>24 Game</title>
     <!-- Bootstrap 5 CSS -->
     <link
@@ -10,20 +10,20 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
-    >
+    />
     <!-- font awesome and google fonts -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
-    >
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous"
       rel="stylesheet"
-    >
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="min-vh-100">
     <header>
@@ -32,19 +32,75 @@
 
     <!-- Main Game Area -->
     <main>
-        <div class="game-area">
-            
-            <!-- Rules Button Section -->
-            <div class="rules-area">
-            </div>
+      <div class="game-area">
+        <div class="rules-area">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#rulesModal"
+          >
+            Rules
+          </button>
 
-            <!-- Placeholder for Game Panel -->
-            <div class="game-panel container">
-            <!-- Content like score, number grid, etc., -->
+          <!--Rules Bootsrap Modal -->
+          <div
+            class="modal fade"
+            id="rulesModal"
+            tabindex="-1"
+            aria-labelledby="rulesModalLabel"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1
+                    class="modal-title fs-5 text-center w-100"
+                    id="rulesModalLabel"
+                  >
+                    How to Play the 24 Game
+                  </h1>
+                </div>
+                <div class="modal-body text-start">
+                  <ul>
+                    <li>
+                      You have <strong>2 minutes</strong> to solve as many
+                      puzzles as possible.
+                    </li>
+                    <li>
+                      Click a number to select it, then choose an operation:
+                      <strong>+, -, ×, or ÷</strong>. Followed by the second
+                      number.
+                    </li>
+                    <li>The result replaces the two numbers you used.</li>
+                    <li>
+                      Keep going until only <strong>one number</strong> remains.
+                    </li>
+                    <li>If that number is <strong>24</strong>, you win!</li>
+                    <li>
+                      If you go down the wrong path, don't worry you can use the
+                      <strong>UNDO</strong> button as many times as you need.
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Got it!
+                  </button>
+                </div>
+              </div>
             </div>
-
+          </div>
         </div>
-
+        <!-- Placeholder for Game Panel -->
+        <div class="game-panel container">
+          <!-- Content like score, number grid, etc., -->
+        </div>
+      </div>
+    </main>
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
