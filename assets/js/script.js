@@ -208,7 +208,26 @@ document.addEventListener("DOMContentLoaded", function(){
      * @param {Event} event - The click event triggered by an operator button.
      */
     function handleOperatorClick(event) {
+        // Stores the clicked operator into a variable
+        const clickedOp = event.currentTarget;
 
+        // Deselect operator if same operator clicked
+        if(gameState.lastClickedOp === clickedOp) {
+            clickedOp.classList.toggle("selected");
+            gameState.operator = null;
+            gameState.lastClickedOp = null;
+            gameState.step = 2;
+        } else {
+            // Deselect previous operator if it exists
+            if (gameState.lastClickedOp) {
+                gameState.lastClickedOp.classList.remove("selected");
+            }
+            // Select new operator
+            clickedOp.classList.add("selected");
+            gameState.lastClickedOp = clickedOp;
+            gameState.operator = clickedOp.textContent.trim();
+            gameState.step = 3;
+        }
     }
 
     /**
