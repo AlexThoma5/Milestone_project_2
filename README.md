@@ -192,6 +192,8 @@ I wanted to keep the colour scheme clean and non-distracting, allowing the user 
     * wireframes were created using balsamiq from https://balsamiq.com/wireframes/desktop/#
 *   Grammarly
     * Grammarly was used to spell check and catch mistakes in the website and README.md.
+*   ChatGPT 
+    * ChatGPT has been an invaluable tool throughout this project, prompting it to act as my mentor and help me understand my mistakes has accelerated my learning massivley.
 
 ## Testing
 
