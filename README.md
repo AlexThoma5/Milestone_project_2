@@ -84,9 +84,85 @@ When selecting the fonts for my website, I considered readability, aesthetics an
 
 ### Colour Scheme
 
+When deciding on a colour scheme, I wanted it to match the overall playful, fun theme of the site while maintaining a professional, aesthetically pleasing look. In doing so I decided upon these colours.
+
+![Colour Pallette](docs/screenshots/colors.png)
+
+I wanted to keep the colour scheme clean and non-distracting, allowing the user to focus entirely on the game itself. I found that in this case, less is more — and that subtle uses of color, such as highlighting selected operators, can enhance the experience significantly without overwhelming the interface.
+
 ## Features:
 
-### Site Wide Features:
+### Home Page:
+
+#### Header
+
+![Header](docs/screenshots/header.png)
+- Colourful header that is visually appealing and sets the tone for the website.
+
+#### Rules Button - Rules Modal
+
+![Rules Button](docs/screenshots/rules-btn.png)
+![Rules Modal](docs/screenshots/rules-modal.png)
+- The rules button with custom styling provides access to the modal containing the game instructions.
+- The rules modal provides the user with the necessary information to understand the game.
+
+#### Score Counter
+
+![Score Counter](docs/screenshots/score-counter.png)
+- Score counter that updates every time the user scores a point.
+- Improves user experience and user satisfaction as the user gets visual feedback every time they achieve a point.
+
+#### Timer
+
+![Game Timer](docs/screenshots/timer.png)
+- Game timer that begins when the game starts.
+- Improves competitive aspect and replayability of the game.
+- Counts down in the MM: SS format to make it more user-friendly.
+
+#### Number Grid
+
+![Number Grid](docs/screenshots/number-grid.png)
+- Simple two by two grid, keeps the layout clean and concise for the user.
+- Keeps the numbers within the grid close together, which makes it faster for the user to perform operations therefore leading to a more enjoyable experience.
+
+#### Operator Buttons
+
+![Operator Buttons](docs/screenshots/operators.png)
+- Allows the user to select the operator for the current calculation they are trying to make.
+- They appear side by side underneath the buttons, providing the user with an intuitive design allowing for a more efficient and smoother experience while playing the game.
+
+#### Start Game Button
+
+![Start Game Button](docs/screenshots/start-game.png)
+- Start game button that gets the game up and running and starts the game timer.
+
+#### Quit Game Button
+
+![Quit Game Button](docs/screenshots/quit.png)
+- Quit game button that allows the user to quit the game at the click of a button.
+- Appears in place of the start game button once the game has begun.
+- Executes a simple refresh to bring the user back to the home page.
+
+#### Undo Button
+
+![Undo Game Button](docs/screenshots/undo.png)
+- The undo button is crucial to a good user experience, it allows the user to undo/rewind their last move.
+- Can be pressed multiple times until the numbers are back to how they first appeared.
+- The undo button allows the user to backtrack whenever appropriate within the game, this allows the user to experiment with numbers and try multiple solutions without getting stuck.
+
+#### Error Modal
+
+![Error Modal](docs/screenshots/error-modal.png)
+- Error modal that appears when the user makes an invalid calculation (negative or decimal number)
+- Provides the user with feedback on the mistake they made and the result of their calculation.
+- The instant feedback gives the user a better understanding of why they received an error and how to prevent future errors.
+
+#### Game Ending Modal
+
+![Error Modal](docs/screenshots/game-ending-modal.png)
+- The game ending modal appears when the game timer reaches 00:00s and the game ends.
+- Enhances user experience by providing a custom message depending on the user's score.
+- Contains a "New game" button which sends the user straight into another game.
 
 ### Future enhancements
 
