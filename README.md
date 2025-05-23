@@ -1,8 +1,14 @@
-# Milestone_project_2
+# 24 Game
+
+![multi-device-mockups](docs/screenshots/multi-device-mockups.png)
 
 ## Site Overview
 
-[View Live Site.]() Hosted on GitHub Pages.
+This project is a Math puzzle game known as the '24 game'. I played this game throughout school, and I thought it would be a fun challenge to recreate using JavaScript, HTML, and CSS.
+
+The site is designed to be user-friendly and accessible, it contains a simple layout and is responsive across all devices. Users can improve their mental arithmetic while enjoying the fun, competitive environment the 24 game provides.
+
+[View Live Site.](https://alexthoma5.github.io/Milestone_project_2/) Hosted on GitHub Pages.
 
 ## Table Of Contents:
 
