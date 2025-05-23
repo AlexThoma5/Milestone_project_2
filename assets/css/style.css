@@ -19,7 +19,8 @@ body {
     overflow: hidden; /* Remove the scroll to make it feel more like an app */
     font-family: var(--primary-font);
     letter-spacing: 1px;
-    touch-action: manipulation;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
 }
 
 .hide {
@@ -36,6 +37,8 @@ body {
 .heading {
     color: white;
     font-size: 3rem;
+    background: -webkit-gradient(linear,left top, right top,from(rgba(51, 51, 153, 1)), to(rgba(255, 0, 204, 1)));
+    background: -o-linear-gradient(left,rgba(51, 51, 153, 1) 0%, rgba(255, 0, 204, 1) 100%);
     background: linear-gradient(90deg,rgba(51, 51, 153, 1) 0%, rgba(255, 0, 204, 1) 100%);
     font-family: var(--secondary-font);
     text-align: center;
@@ -46,8 +49,13 @@ body {
 /* main game-area */
 
 .game-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     height: 90vh;
     background-color: var(--primary-color);
@@ -95,10 +103,14 @@ body {
     border-radius: 5%;
     font-size: 3rem;
     border: none;
+    background: -o-linear-gradient(305deg, #ffffff, #e6e6e6);
     background: linear-gradient(145deg, #ffffff, #e6e6e6);  /* 3d button background taken from chatgpt */
-    box-shadow: 4px 4px 8px #cfcfcf, -4px -4px 8px #ffffff;  /* 3d button background taken from chatgpt */
+    -webkit-box-shadow: 4px 4px 8px #cfcfcf, -4px -4px 8px #ffffff;
+            box-shadow: 4px 4px 8px #cfcfcf, -4px -4px 8px #ffffff;  /* 3d button background taken from chatgpt */
     padding: 1rem 1.5rem;
     margin: 0.5rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     color: #1a6ba2;
 }
@@ -106,7 +118,8 @@ body {
 .game-btn.selected {
     background: #3498db;
     color: white;
-    box-shadow: inset 2px 2px 5px #2c80b4;  /* 3d button background taken from chatgpt */
+    -webkit-box-shadow: inset 2px 2px 5px #2c80b4;
+            box-shadow: inset 2px 2px 5px #2c80b4;  /* 3d button background taken from chatgpt */
   }
 
 .min-height {
@@ -124,13 +137,20 @@ body {
     width: 60px;
     border-radius: 10%;
     font-size: 1.5rem;
+    background: -o-linear-gradient(305deg, #ffffff, #e6e6e6);
     background: linear-gradient(145deg, #ffffff, #e6e6e6); /* 3d button background taken from chatgpt */
 }
 
 .center-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #plus {
@@ -203,7 +223,9 @@ body {
     height: 50px;
     font-size: 15px;
     letter-spacing: 1px;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 
 #quit {
@@ -255,12 +277,16 @@ body {
         max-width: 550px;
         margin: 0 auto;
         background-color: var(--secondary-color);
-        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+                transform: scale(0.9);
     }
 
     .heading {
         color: white;
         font-size: 3rem;
+        background: -webkit-gradient(linear,left top, right top,from(rgba(51, 51, 153, 1)), to(rgba(255, 0, 204, 1)));
+        background: -o-linear-gradient(left,rgba(51, 51, 153, 1) 0%, rgba(255, 0, 204, 1) 100%);
         background: linear-gradient(90deg,rgba(51, 51, 153, 1) 0%, rgba(255, 0, 204, 1) 100%);
         text-align: center;
         padding: 0.5rem;
@@ -279,6 +305,8 @@ body {
     .heading {
         color: white;
         font-size: 3rem;
+        background: -webkit-gradient(linear,left top, right top,from(rgba(51, 51, 153, 1)), to(rgba(255, 0, 204, 1)));
+        background: -o-linear-gradient(left,rgba(51, 51, 153, 1) 0%, rgba(255, 0, 204, 1) 100%);
         background: linear-gradient(90deg,rgba(51, 51, 153, 1) 0%, rgba(255, 0, 204, 1) 100%);
         text-align: center;
         padding: 1.5rem;
