@@ -245,7 +245,7 @@ I wanted to keep the colour scheme clean and non-distracting, allowing the user 
 
 ![JSHint screenshot](docs/testing/jshint.png)
 
-## Browser Testing 
+### Browser Testing 
 
  - I conducted browser tests using four different browsers to check for visual discrepancies and responsive design. All tests were conducted on a macbook.
 
@@ -297,6 +297,27 @@ Examples of responsiveness are created by using Google's Dev Tools to simulate d
 
 </details>
 
+### Manual Testing
+
+| **Feature being tested** | **Steps**                                                  | **Expected outcome**                                                          | **Pass/Fail** | **Screenshot**                                                    |
+|--------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------|---------------|-------------------------------------------------------------------|
+| Rules button - modal     | Click on rules button                                      | When clicked the rules modal should appear and display all game rules to user | Pass          |  ![Rules modal screenshot](docs/testing/rules-modal-test.png)     |
+| Start Game button        | Click on start game button                                 | Game should start running, numbers should appear and timer should begin.      | Pass          |  ![Start game screenshot](docs/testing/start-game-test.png)       |
+| Select number button     | Click on number button when game is running                | Number should be highlighted upon click                                       | Pass          |  ![Number highlight screenshot](docs/testing/number-test.png)     |
+| Deselect number button   | Click on number that was already selected                  | Number should lose highlight and return to normal                             | Pass          |  ![Number Deselect screenshot](docs/testing/number2-test.png)     |
+| Select operator button   | Click on operator after first number is chosen             | Operator should be highlighted                                                | Pass          |  ![operator highlight screenshot](docs/testing/operator-test.png) |
+| Perform calculation      | Click a number, then an operator and final number          | Two numbers should calculate                                                  | Pass          |  ![Calculation screenshot](docs/testing/calculation-test.png)     |
+| Invalid Calculation      | Create an invalid expression by creating a negative number | Error modal should pop up with your result                                    | Pass          |  ![Invalid calculation screenshot](docs/testing/invalid-test.png) |
+| Score a point            | Create 24 in the game                                      | Score counter should increment by 1                                           | Pass          | See video                                                         |
+| Undo button              | Click undo button                                          | Numbers should revert back to previous version                                | Pass          | See video                                                         |
+| Quit game button         | Click on quit game button while game is running            | Page should refresh                                                           | Pass          | See video                                                         |
+| End game modal           | Play the game until timer reaches 0s.                      | Modal should appear when game timer ends                                      | Pass          |  ![End game modal screenshot](docs/testing/game-end-test.png)     |
+
+#### Manual Testing Video
+
+Here is a short video, showing the game in action.
+
+[![Watch the video](docs/testing/thumbnail.png)](docs/testing/screen-recording.mov)
 
 ## Bugs
 
