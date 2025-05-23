@@ -241,6 +241,10 @@ I wanted to keep the colour scheme clean and non-distracting, allowing the user 
 
 ![CSS Validation Screenshot](docs/testing/css-validation.png)
 
+#### JSHint validation
+
+![JSHint screenshot](docs/testing/jshint.png)
+
 ## Browser Testing 
 
  - I conducted browser tests using four different browsers to check for visual discrepancies and responsive design. All tests were conducted on a macbook.
