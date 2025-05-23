@@ -233,6 +233,10 @@ I wanted to keep the colour scheme clean and non-distracting, allowing the user 
     
     - ![Home Page Validation](docs/testing/home-page-validation.png)
 
+2. 404 Page validation:
+    
+    - ![404 Page Validation](docs/testing/home-page-validation.png)
+
 #### W3C CSS Validation Service
 
 ![CSS Validation Screenshot](docs/testing/css-validation.png)
