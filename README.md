@@ -207,6 +207,12 @@ I wanted to keep the colour scheme clean and non-distracting, allowing the user 
 
     ![Home Page - Mobile](docs/testing/lighthouse-mobile.png)
 
+### Wave Test Results
+
+1. Home Page 
+
+    ![Home Page Wave Test](docs/testing/wave-testing.png)
+
 ## Bugs
 
 ## Deployment
