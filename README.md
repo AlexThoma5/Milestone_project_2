@@ -207,11 +207,23 @@ I wanted to keep the colour scheme clean and non-distracting, allowing the user 
 
     ![Home Page - Mobile](docs/testing/lighthouse-mobile.png)
 
+3. 404 Page - Desktop
+
+    ![404 Page - Desktop](docs/testing/404-lighthouse-desktop.png)
+
+4. 404 Page - Mobile
+
+    ![404 Page - Mobile](docs/testing/404-lighthouse-mobile.png)
+
 ### Wave Test Results
 
 1. Home Page 
 
     ![Home Page Wave Test](docs/testing/wave-testing.png)
+
+2. 404 Page
+
+    ![404 Page Wave Test](docs/testing/wave-testing-404.png)
 
 ### Code Validation
 
