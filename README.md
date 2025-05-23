@@ -372,4 +372,10 @@ The project will now of been cloned on your local machine for use.
 
 ## Credits
 
+- This project was inspired by the '24 card game'.
+
+- I credited any re-used code / ideas in the source code via comments.
+
 ### Acknowledgment
+
+  - I would like to thank my mentor Gareth for all his guidance and advice throughout the project.
