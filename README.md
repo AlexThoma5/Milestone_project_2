@@ -253,6 +253,46 @@ I wanted to keep the colour scheme clean and non-distracting, allowing the user 
  |   Safari       |        Latest          |    No visual discrepancies    | Site remains responsive on all pages and screen sizes   |      ![Safari Screenshot](docs/testing/safari-screenshot.png)         |
 ---
 
+### Responsiveness
+
+Examples of responsiveness are created by using Google's Dev Tools to simulate devices of various sizes.
+
+1. **Home Page**
+
+<details><summary>Click to reveal images</summary>
+
+- Iphone 14 Pro Max
+
+     ![Home Page Mobile](docs/testing/home-page-iphone.png)
+
+- Ipad
+
+     ![Home Page Tablet](docs/testing/home-page-ipad.png)
+
+- Desktop 
+
+    ![Home Page Desktop](docs/testing/google-screenshot.png)
+
+</details>
+
+2. **404 Page**
+
+<details><summary>Click to reveal images</summary>
+
+- Iphone 14 Pro Max
+
+     ![404 Page Mobile](docs/testing/404-page-mobile.png)
+
+- Ipad
+
+     ![404 Page Tablet](docs/testing/404-page-ipad.png)
+
+- Desktop
+
+    ![404 Page Desktop](docs/testing/404-page-desktop.png)
+
+</details>
+
 
 ## Bugs
 
