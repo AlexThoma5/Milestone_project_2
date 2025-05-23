@@ -300,6 +300,18 @@ Examples of responsiveness are created by using Google's Dev Tools to simulate d
 
 ## Bugs
 
+### Fixed bugs
+
+1. When opening and closing my bootstrap modals, I was receiving an error on my console. This was due to the bootstrap modal coming with an aria-hidden class. To fix the issue after discussing it with my mentor, he advised me to just remove the aria-hidden class altogether.
+
+2. When validating my CSS I received multiple warnings about a 'Trailing slash', these appeared due to formatting my code using 'Prettier'. To combat this I manually removed all the trailing slashes.
+
+3. I had an issue where when testing my website on certain mobile devices, the lower buttons became inaccessible to the user. To combat this I used a media query targeting the height of 736px and made the necessary design changes to accomodate these shorter mobile devices.
+
+### Remaining bugs
+
+ - No known remaining bugs at this point in time.
+
 ## Deployment
 
 ### Version Control
