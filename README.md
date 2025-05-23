@@ -212,7 +212,18 @@ I wanted to keep the colour scheme clean and non-distracting, allowing the user 
 1. Home Page 
 
     ![Home Page Wave Test](docs/testing/wave-testing.png)
+    
+### Code Validation
 
+#### W3C Markup Validation Service
+
+1. Home Page validation:
+    
+    - ![Home Page Validation](docs/testing/home-page-validation.png)
+
+#### W3C CSS Validation Service
+
+![CSS Validation Screenshot](docs/testing/css-validation.png)
 ## Bugs
 
 ## Deployment
