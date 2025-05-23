@@ -254,6 +254,25 @@ body {
     letter-spacing: 1px;
 }
 
+/* 404 page styling */
+
+.background {
+    background-color: var(--primary-color);
+}
+
+.panel {
+    color: #1a6ba2;
+    width: 85%;
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+}
+
+.line-height {
+   line-height: 35px; 
+}
+
+
 /* Media queries */
 
 /* For small mobile devices below 355px */
