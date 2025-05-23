@@ -8,6 +8,8 @@ This project is a Math puzzle game known as the '24 game'. I played this game th
 
 The site is designed to be user-friendly and accessible, it contains a simple layout and is responsive across all devices. Users can improve their mental arithmetic while enjoying the fun, competitive environment the 24 game provides.
 
+I initially developed my project in a dedicated test-build repository to create a safe environment for experimentation and learning. This approach allowed me to explore new ideas, test different features, and troubleshoot issues freely without worrying about maintaining a clean or organised repository. Overall I think this has helped my learning and allowed me to gain a better understanding of my project.
+
 [View Live Site.](https://alexthoma5.github.io/Milestone_project_2/) Hosted on GitHub Pages.
 
 ## Table Of Contents:
@@ -181,7 +183,7 @@ I wanted to keep the colour scheme clean and non-distracting, allowing the user 
 * Visual Studio Code
     * The website was developed using Visual Studio Code IDE.
 * GitHub
-    * Source code is hosted on GitHub and delpoyed using Git Pages.
+    * Source code is hosted on GitHub and deployed using Git Pages.
 * Git 
     * Used to commit and push code during the development phase of the Website.
 * Font Awesome
@@ -193,7 +195,7 @@ I wanted to keep the colour scheme clean and non-distracting, allowing the user 
 *   Grammarly
     * Grammarly was used to spell check and catch mistakes in the website and README.md.
 *   ChatGPT 
-    * ChatGPT has been an invaluable tool throughout this project, prompting it to act as my mentor and help me understand my mistakes has accelerated my learning massivley.
+    * ChatGPT has been an invaluable tool throughout this project, prompting it to act as my mentor and help me understand my mistakes has accelerated my learning massively.
 
 ## Testing
 
