@@ -197,6 +197,16 @@ I wanted to keep the colour scheme clean and non-distracting, allowing the user 
 
 ## Testing
 
+### Google's Lighthouse Performance
+
+1. Home Page - Desktop
+
+    ![Home Page - Desktop](docs/testing/lighthouse-desktop.png)
+
+2. Home Page - Mobile
+
+    ![Home Page - Mobile](docs/testing/lighthouse-mobile.png)
+
 ## Bugs
 
 ## Deployment
