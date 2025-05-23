@@ -241,6 +241,19 @@ I wanted to keep the colour scheme clean and non-distracting, allowing the user 
 
 ![CSS Validation Screenshot](docs/testing/css-validation.png)
 
+## Browser Testing 
+
+ - I conducted browser tests using four different browsers to check for visual discrepancies and responsive design. All tests were conducted on a macbook.
+
+ |    Browser     |        Version         |      Visual Discrepancies     |                   Responsive Design                     |       Screenshot       |
+ |----------------|------------------------|-------------------------------|---------------------------------------------------------|---------------|
+ |   Google       |        Latest          |    No visual discrepancies    | Site remains responsive on all pages and screen sizes   |       ![Google Screenshot](docs/testing/google-screenshot.png)        |
+ |   Edge         |        Latest          |    No visual discrepancies    | Site remains responsive on all pages and screen sizes   |        ![Edge Screenshot](docs/testing/edge-screenshot.png)       |
+ |   Firefox        |        Latest          |    No visual discrepancies    | Site remains responsive on all pages and screen sizes   |      ![Firefox Screenshot](docs/testing/firefox-screenshot.png)         |
+ |   Safari       |        Latest          |    No visual discrepancies    | Site remains responsive on all pages and screen sizes   |      ![Safari Screenshot](docs/testing/safari-screenshot.png)         |
+---
+
+
 ## Bugs
 
 ## Deployment
