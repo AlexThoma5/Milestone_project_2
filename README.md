@@ -297,6 +297,22 @@ Examples of responsiveness are created by using Google's Dev Tools to simulate d
 
 </details>
 
+### User Story Tests
+
+| User Story                                                                                                                                          | Test                                                                                            | Pass/Fail |   |   |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|-----------|---|---|
+| As a beginner, I want to be able to see the game rules to understand the game.                                                                      | The site features a rules button that provides the user with a clear understanding of the game. | Pass      |   |   |
+| As a player, I want the game to prevent invalid moves (like dividing by zero or using negative/decimal results), so I play within the game’s rules. | When an invalid move occurs, the game shows an error modal to the user.                         | Pass      |   |   |
+| As a player, I want to be able to deselect a number or operator, so that I can change my mind before committing to a move.                          | Both numbers and operators can be selected and deselected                                       | Pass      |   |   |
+| As a player, I want the interface to highlight which numbers and operators I’ve selected so I don’t get confused during my turn.                    | When a user selects a number or operator. They are highlighted in various colours               | Pass      |   |   |
+| As a player, I want to see my score increase when I win so that I can track my progress.                                                            | When the user scores a point, the score counter increases                                       | Pass      |   |   |
+| As a player, I want to undo a move, so that I can try a different calculation if I make a mistake.                                                  | The game features an undo button which allows the user to revert their last move                | Pass      |   |   |
+| As an experienced player, I want the game to be timed to make the game more competitive and rewarding.                                              | The game features a two minute game timer.                                                      | Pass      |   |   |
+| As a player, I want to be presented with my score at the end of the game so that I can attempt to beat it next time.                                | At the end of the game, A game ending modal shows up with the users score and a custom message. | Pass      |   |   |
+| As a player, I want the option to quit the game and start again, so that I can reset my progress and begin a new game at any time.                  | The game features a quit button that allows the user to quit the game if needed.                | Pass      |   |   |
+|                                                                                                                                                     |                                                                                                 |           |   |   |
+|                                                                                                                                                     |                                                                                                 |           |   |   |
+
 ### Manual Testing
 
 | **Feature being tested** | **Steps**                                                  | **Expected outcome**                                                          | **Pass/Fail** | **Screenshot**                                                    |
