@@ -5,8 +5,8 @@
 /* CSS Variables */
 
 :root {
-    --primary-font: "Fredoka", sans-serif;
-    --secondary-font: "Roboto", sans-serif;
+    --primary-font: "Roboto", sans-serif;
+    --secondary-font: "Fredoka", sans-serif;
     --primary-color: #333399;
     --secondary-color: #FAF9F6;
     --hightlight-color: #b80093;
@@ -17,7 +17,7 @@
 
 body {
     overflow: hidden; /* Remove the scroll to make it feel more like an app */
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     letter-spacing: 1px;
     touch-action: manipulation;
 }
@@ -37,7 +37,7 @@ body {
     color: white;
     font-size: 3rem;
     background: linear-gradient(90deg,rgba(51, 51, 153, 1) 0%, rgba(255, 0, 204, 1) 100%);
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
     text-align: center;
     padding: 2rem;
     margin-bottom: 0;
@@ -264,7 +264,7 @@ body {
         background: linear-gradient(90deg,rgba(51, 51, 153, 1) 0%, rgba(255, 0, 204, 1) 100%);
         text-align: center;
         padding: 0.5rem;
-        font-family: var(--primary-font);
+        font-family: var(--secondary-font);
         margin-bottom: 0;
     }
 
@@ -282,7 +282,7 @@ body {
         background: linear-gradient(90deg,rgba(51, 51, 153, 1) 0%, rgba(255, 0, 204, 1) 100%);
         text-align: center;
         padding: 1.5rem;
-        font-family: var(--primary-font);
+        font-family: var(--secondary-font);
         margin-bottom: 0;
     }
 
