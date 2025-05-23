@@ -69,6 +69,19 @@ The wireframes for this website were created using Balsamiq to establish a clear
     
 ### Typography
 
+When selecting the fonts for my website, I considered readability, aesthetics and accessibility. Therefore I chose the following fonts:
+
+#### Primary Font - Roboto
+
+  - Used for all text and numbers, besides the main heading.
+  - Clean, modern, and highly legible, especially good for mobile views.
+
+
+#### Secondary Font - Fredoka
+
+  - Used for the main heading on site.
+  - Fun, playful and sets the tone of the site from the offset.
+
 ### Colour Scheme
 
 ## Features:
