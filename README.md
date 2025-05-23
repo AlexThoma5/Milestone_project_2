@@ -166,6 +166,12 @@ I wanted to keep the colour scheme clean and non-distracting, allowing the user 
 
 ### Future enhancements
 
+1. In a future release and when my skills develop further, I'd like to learn how to build and implement a solution functionality. By allowing the user to view the solution to the challenge that caused them to lose, it provides them with greater user satisfaction as they have the opportunity to learn from it.
+
+2. In a future release, I'd like to implement a scoreboard where the game stores previous scores by the user. This would enhance the competitive nature of the game as the user will be able to compete against their previous scores.
+
+3. In a future release, I'd like to implement sound effects into the game. For example, when the user creates an invalid number, achieves a point or even when the timer is running out.
+
 ## Technologies Used
 
 * HTML
